@@ -1,4 +1,5 @@
 import { Notificacao } from './notificacao'
+import { rotuloDoStatus } from './statusPedido'
 
 export default function App(){
 return(
@@ -9,6 +10,11 @@ return(
       <Notificacao mensagens={[]} />
       <Notificacao mensagens={['Sua compra foi aprovada']} />
       <Notificacao mensagens={['Item 1', 'Item 2']} />
+
+      <h2>2. Status do Pedido</h2>
+      <p>ENVIADO: {rotuloDoStatus('ENVIADO')}</p>
+      <p>DESCONHECIDO: {rotuloDoStatus('ABC')}</p>
+
     </div>
   )
 }
