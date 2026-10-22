@@ -1,5 +1,6 @@
 import { Notificacao } from './notificacao'
 import { rotuloDoStatus } from './statusPedido'
+import { AppTema } from './tema'
 
 export default function App(){
 return(
@@ -15,6 +16,8 @@ return(
       <p>ENVIADO: {rotuloDoStatus('ENVIADO')}</p>
       <p>DESCONHECIDO: {rotuloDoStatus('ABC')}</p>
 
+      <h2>3. Tema (Lifting State Up)</h2>
+      <AppTema />
     </div>
   )
 }
